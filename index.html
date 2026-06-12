@@ -31,7 +31,6 @@ nav { background: var(--bg-card); border-bottom: 1px solid var(--border); positi
 .page { display: none; max-width: 980px; margin: 0 auto; padding: 2rem 1rem 4rem; }
 .page.active { display: block; }
 
-/* HOME */
 .hero { text-align: center; padding: 2.5rem 0 2rem; }
 .hero-tag { display: inline-block; background: rgba(200,153,42,.15); color: var(--gold-light); font-size: 12px; font-weight: 600; letter-spacing: .08em; padding: 4px 12px; border-radius: 20px; border: 1px solid rgba(200,153,42,.3); margin-bottom: 16px; text-transform: uppercase; }
 .hero h1 { font-size: clamp(26px,6vw,44px); font-weight: 800; line-height: 1.15; color: #fff; }
@@ -61,7 +60,6 @@ nav { background: var(--bg-card); border-bottom: 1px solid var(--border); positi
 .prize-card .pz-pct { font-size: 22px; font-weight: 700; color: var(--gold-light); }
 .prize-card .pz-val { font-size: 13px; color: var(--text-muted); margin-top: 2px; }
 
-/* PALPITES */
 .closed-banner { background: rgba(217,64,64,.15); border: 1px solid rgba(217,64,64,.4); border-radius: 10px; padding: 18px 20px; text-align: center; color: #f07070; font-size: 15px; font-weight: 600; margin-bottom: 24px; }
 .field-group label { display: block; font-size: 12px; color: var(--text-muted); margin-bottom: 6px; }
 .field-group input { width: 100%; background: var(--bg); border: 1px solid var(--border); color: var(--text); border-radius: 8px; padding: 10px 14px; font-size: 14px; outline: none; }
@@ -71,7 +69,7 @@ nav { background: var(--bg-card); border-bottom: 1px solid var(--border); positi
 .groups-grid { display: grid; grid-template-columns: repeat(auto-fill,minmax(290px,1fr)); gap: 14px; }
 .group-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 14px; padding: 16px; }
 .group-card.error { border-color: rgba(217,64,64,.6); }
-.group-label { font-size: 13px; font-weight: 700; letter-spacing: .06em; color: var(--gold-light); text-transform: uppercase; margin-bottom: 4px; display: flex; align-items: center; justify-content: space-between; }
+.group-label { font-size: 13px; font-weight: 700; letter-spacing: .06em; color: var(--gold-light); text-transform: uppercase; margin-bottom: 4px; }
 .group-status { font-size: 11px; color: var(--text-muted); margin-bottom: 10px; height: 16px; }
 .group-status.done { color: #5ddb8a; }
 .group-status.err { color: #f07070; }
@@ -84,7 +82,6 @@ nav { background: var(--bg-card); border-bottom: 1px solid var(--border); positi
 .badge-pos { font-size: 10px; font-weight: 700; padding: 1px 7px; border-radius: 4px; margin-left: auto; }
 .badge-1 { background: rgba(200,153,42,.3); color: var(--gold-light); }
 .badge-2 { background: rgba(42,143,82,.3); color: #9effc0; }
-
 .group-legend { display: flex; gap: 14px; margin-bottom: 12px; }
 .legend-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--text-muted); }
 .dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
@@ -98,7 +95,6 @@ nav { background: var(--bg-card); border-bottom: 1px solid var(--border); positi
 .champ-btn:hover { border-color: rgba(200,153,42,.5); }
 .champ-btn.selected { border-color: var(--gold); background: rgba(200,153,42,.15); color: var(--gold-light); font-weight: 700; }
 
-/* PARTICIPANTS LIST */
 .participants-list { display: grid; gap: 8px; }
 .participant-item { background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: 14px 18px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .participant-item .p-name { font-weight: 600; font-size: 14px; }
@@ -107,9 +103,7 @@ nav { background: var(--bg-card); border-bottom: 1px solid var(--border); positi
 .valido.sim { background: rgba(26,107,60,.3); color: #5ddb8a; border: 1px solid rgba(93,219,138,.3); }
 .valido.nao { background: rgba(100,100,100,.2); color: #aaa; border: 1px solid rgba(150,150,150,.2); }
 
-/* RANKING */
 .ranking-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; flex-wrap: wrap; gap: 10px; }
-.ranking-header h2 { font-size: 18px; font-weight: 700; }
 .btn-sm { background: transparent; border: 1px solid var(--border); color: var(--text-muted); border-radius: 8px; padding: 6px 14px; font-size: 12px; cursor: pointer; }
 .btn-sm:hover { border-color: var(--green-light); color: var(--text); }
 table { width: 100%; border-collapse: collapse; }
@@ -119,7 +113,6 @@ tr:last-child td { border-bottom: none; }
 .rank-pts { font-weight: 700; color: var(--gold-light); }
 .empty-state { text-align: center; padding: 48px; color: var(--text-muted); font-size: 14px; }
 
-/* LOGIN */
 .login-wrap { max-width: 380px; margin: 4rem auto; }
 .login-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; padding: 32px; }
 .login-card h2 { font-size: 20px; font-weight: 700; margin-bottom: 4px; }
@@ -130,7 +123,6 @@ tr:last-child td { border-bottom: none; }
 .login-field input:focus { border-color: var(--green-light); }
 .err-msg { color: #f07070; font-size: 13px; margin-top: 10px; display: none; }
 
-/* ADMIN */
 .admin-tabs { display: flex; gap: 8px; margin-bottom: 24px; flex-wrap: wrap; }
 .admin-tab { padding: 8px 18px; font-size: 13px; font-weight: 500; border: 1px solid var(--border); border-radius: 8px; cursor: pointer; background: transparent; color: var(--text-muted); transition: all .15s; }
 .admin-tab.active { background: var(--green); color: #fff; border-color: var(--green); }
@@ -153,10 +145,11 @@ tr:last-child td { border-bottom: none; }
 .pix-box { background: rgba(200,153,42,.1); border: 1px solid rgba(200,153,42,.3); border-radius: 10px; padding: 14px 16px; margin-bottom: 16px; display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
 .pix-key { font-size: 17px; font-weight: 700; color: var(--gold-light); }
 .copy-btn { background: rgba(200,153,42,.2); border: 1px solid rgba(200,153,42,.4); color: var(--gold-light); border-radius: 6px; padding: 5px 12px; font-size: 12px; cursor: pointer; }
-
+.loading-overlay { position: fixed; inset: 0; background: rgba(10,31,18,.85); display: flex; align-items: center; justify-content: center; z-index: 9999; flex-direction: column; gap: 16px; }
+.spinner { width: 40px; height: 40px; border: 3px solid var(--border); border-top-color: var(--gold-light); border-radius: 50%; animation: spin .8s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
 .toast { position: fixed; bottom: 24px; right: 24px; background: var(--green); color: #fff; padding: 12px 20px; border-radius: 10px; font-size: 14px; font-weight: 500; transform: translateY(80px); opacity: 0; transition: all .3s; z-index: 9999; max-width: 320px; }
 .toast.show { transform: translateY(0); opacity: 1; }
-
 @media (max-width:600px) {
   .participant-row, .prize-row { grid-template-columns: 1fr; }
   .tab { padding: 11px 10px; font-size: 12px; }
@@ -166,37 +159,39 @@ tr:last-child td { border-bottom: none; }
 </head>
 <body>
 
+<div class="loading-overlay" id="loading">
+  <div class="spinner"></div>
+  <div style="color:var(--text-muted);font-size:13px">Carregando bolão...</div>
+</div>
+
 <nav>
   <div class="nav-inner">
     <div class="nav-logo">⚽ Bolão Copa 2026 <small>EUA · Canadá · México</small></div>
-    <button class="tab active" data-p="home"    onclick="showPage('home',this)">Início</button>
-    <button class="tab"        data-p="palpites" onclick="showPage('palpites',this)">Palpites</button>
-    <button class="tab"        data-p="lista"    onclick="showPage('lista',this)">Participantes</button>
-    <button class="tab"        data-p="ranking"  onclick="showPage('ranking',this)">Ranking</button>
-    <button class="tab"        data-p="admin"    onclick="showPage('admin',this)">Admin</button>
+    <button class="tab active" data-p="home"     onclick="showPage('home',this)">Início</button>
+    <button class="tab"        data-p="palpites"  onclick="showPage('palpites',this)">Palpites</button>
+    <button class="tab"        data-p="lista"     onclick="showPage('lista',this)">Participantes</button>
+    <button class="tab"        data-p="ranking"   onclick="showPage('ranking',this)">Ranking</button>
+    <button class="tab"        data-p="admin"     onclick="showPage('admin',this)">Admin</button>
   </div>
 </nav>
 
-<!-- ===== HOME ===== -->
+<!-- HOME -->
 <div id="page-home" class="page active">
   <div class="hero">
     <div class="hero-tag">Copa do Mundo 2026</div>
     <h1>Bolão dos <em>Colegas</em></h1>
     <p class="hero-sub">Acerte os classificados de cada grupo e torça pelo seu campeão</p>
   </div>
-
   <div class="stats-row">
-    <div class="stat-card"><div class="stat-num" id="s-inscritos">0</div><div class="stat-label">Inscritos</div></div>
-    <div class="stat-card"><div class="stat-num" id="s-validos">0</div><div class="stat-label">Palpites válidos</div></div>
-    <div class="stat-card"><div class="stat-num" id="s-premio">R$ 0</div><div class="stat-label">Prêmio total</div></div>
+    <div class="stat-card"><div class="stat-num" id="s-inscritos">—</div><div class="stat-label">Inscritos</div></div>
+    <div class="stat-card"><div class="stat-num" id="s-validos">—</div><div class="stat-label">Palpites válidos</div></div>
+    <div class="stat-card"><div class="stat-num" id="s-premio">—</div><div class="stat-label">Prêmio total</div></div>
     <div class="stat-card"><div class="stat-num">314</div><div class="stat-label">Pontos máximos</div></div>
   </div>
-
   <div class="prize-row">
     <div class="prize-card"><div class="pz-pos">🥇</div><div class="pz-pct">70%</div><div class="pz-val" id="pv1">do prêmio para o 1º</div></div>
     <div class="prize-card"><div class="pz-pos">🥈</div><div class="pz-pct">30%</div><div class="pz-val" id="pv2">do prêmio para o 2º</div></div>
   </div>
-
   <hr class="divider">
   <p class="section-title">Como pontuar</p>
   <div class="score-list">
@@ -205,57 +200,45 @@ tr:last-child td { border-bottom: none; }
     <div class="score-item bonus"><span>⭐ Bônus: cravar os dois do mesmo grupo</span><span class="pts">+5 pts</span></div>
     <div class="score-item"><span>🏆 Acertar o Campeão da Copa</span><span class="pts">50 pts</span></div>
   </div>
-
   <hr class="divider">
   <p class="section-title">Regras</p>
   <div class="info-box">
-    📅 <strong>Inscrições até 17/06/2026 às 22h00</strong> — encerramento da 1ª rodada da fase de grupos. Após esse horário nenhum novo palpite será aceito.<br>
+    📅 <strong>Inscrições até 17/06/2026 às 22h00</strong> — após esse horário nenhum novo palpite será aceito.<br>
     💳 <strong>Taxa: R$ 10,00 via Pix</strong> — chave CPF: <strong>058.056.995-08</strong>. Envie o comprovante ao organizador.<br>
     ✅ Apenas participantes com <strong>pagamento confirmado</strong> pelo organizador terão palpite válido no ranking.<br>
     🔒 Após salvar, <strong>o palpite não pode ser alterado</strong>. Para refazer, é necessário novo pagamento via Pix.<br>
     🏆 Prêmio dividido: <strong>70%</strong> ao 1º lugar e <strong>30%</strong> ao 2º lugar do ranking final.
   </div>
-
   <hr class="divider">
   <p class="section-title">Critério de desempate</p>
   <div class="score-list">
     <div class="score-item">
       <div style="display:flex;align-items:center;gap:12px">
         <span style="font-size:20px;min-width:28px">1°</span>
-        <div>
-          <div style="font-weight:600;font-size:14px">Maior número de bônus de grupo</div>
-          <div style="font-size:12px;color:var(--text-muted);margin-top:2px">Quem cravou mais duplas completas (1° + 2° do mesmo grupo)</div>
-        </div>
+        <div><div style="font-weight:600;font-size:14px">Maior número de bônus de grupo</div><div style="font-size:12px;color:var(--text-muted);margin-top:2px">Quem cravou mais duplas completas (1° + 2° do mesmo grupo)</div></div>
       </div>
       <span class="pts" style="font-size:13px;color:var(--text-muted);white-space:nowrap">⭐ bônus</span>
     </div>
     <div class="score-item">
       <div style="display:flex;align-items:center;gap:12px">
         <span style="font-size:20px;min-width:28px">2°</span>
-        <div>
-          <div style="font-weight:600;font-size:14px">Acertou o campeão da Copa</div>
-          <div style="font-size:12px;color:var(--text-muted);margin-top:2px">Se o bônus for igual, quem acertou o campeão passa à frente</div>
-        </div>
+        <div><div style="font-weight:600;font-size:14px">Acertou o campeão da Copa</div><div style="font-size:12px;color:var(--text-muted);margin-top:2px">Se o bônus for igual, quem acertou o campeão passa à frente</div></div>
       </div>
       <span class="pts" style="font-size:13px;color:var(--text-muted);white-space:nowrap">🏆 campeão</span>
     </div>
     <div class="score-item">
       <div style="display:flex;align-items:center;gap:12px">
         <span style="font-size:20px;min-width:28px">3°</span>
-        <div>
-          <div style="font-weight:600;font-size:14px">Inscrição mais antiga</div>
-          <div style="font-size:12px;color:var(--text-muted);margin-top:2px">Se tudo mais for igual, quem se inscreveu primeiro leva a melhor</div>
-        </div>
+        <div><div style="font-weight:600;font-size:14px">Inscrição mais antiga</div><div style="font-size:12px;color:var(--text-muted);margin-top:2px">Se tudo mais for igual, quem se inscreveu primeiro leva a melhor</div></div>
       </div>
       <span class="pts" style="font-size:13px;color:var(--text-muted);white-space:nowrap">🕐 data</span>
     </div>
   </div>
-
   <div style="height:16px"></div>
   <button class="btn-primary" onclick="showPage('palpites',document.querySelector('[data-p=palpites]'))">Fazer meus palpites →</button>
 </div>
 
-<!-- ===== PALPITES ===== -->
+<!-- PALPITES -->
 <div id="page-palpites" class="page">
   <div id="closed-banner" class="closed-banner" style="display:none">🔒 Inscrições encerradas — prazo final foi 17/06/2026 às 22h00</div>
   <div id="palpites-form">
@@ -270,7 +253,6 @@ tr:last-child td { border-bottom: none; }
         <div class="field-group"><label>WhatsApp com DDD *</label><input type="text" id="f-wpp" placeholder="Ex: 61912345678" inputmode="numeric"></div>
       </div>
     </div>
-
     <h2 style="font-size:18px;font-weight:700;margin-bottom:10px">Palpites por grupo</h2>
     <div class="group-legend">
       <div class="legend-item"><div class="dot gold"></div> 1º colocado (10 pts)</div>
@@ -278,32 +260,30 @@ tr:last-child td { border-bottom: none; }
     </div>
     <p style="color:var(--text-muted);font-size:13px;margin-bottom:16px">Clique em uma seleção para marcá-la como 1ª classificada, depois clique em outra para marcar como 2ª. Todos os grupos são obrigatórios.</p>
     <div class="groups-grid" id="groups-grid"></div>
-
     <h2 style="font-size:18px;font-weight:700;margin-top:28px;margin-bottom:8px">🏆 Campeão da Copa <span style="font-size:13px;font-weight:400;color:var(--text-muted)">(50 pts — obrigatório)</span></h2>
     <div class="champion-card" id="champ-card">
       <p style="font-size:13px;color:var(--text-muted);margin-bottom:12px">Clique na seleção que vai levantar a taça em 2026</p>
       <div id="champ-selected" style="font-size:13px;color:var(--text-muted);margin-bottom:12px">Nenhuma seleção escolhida</div>
       <div class="champion-teams" id="champion-teams"></div>
     </div>
-
     <div class="warn-box" style="margin-top:20px">
-      ⚠️ <strong>Atenção:</strong> após salvar, seu palpite <strong>não poderá ser alterado</strong>. Para participar novamente será necessário novo pagamento via Pix.<br>
-      💳 Após salvar, envie R$ 10,00 para a chave Pix <strong>058.056.995-08</strong> e informe ao organizador.
+      ⚠️ <strong>Atenção:</strong> após salvar, seu palpite <strong>não poderá ser alterado</strong>.<br>
+      💳 Envie R$ 10,00 para a chave Pix <strong>058.056.995-08</strong> e informe ao organizador.
     </div>
-    <button class="btn-primary" onclick="submitPalpite()">Salvar meus palpites ✓</button>
+    <button class="btn-primary" id="btn-submit" onclick="submitPalpite()">Salvar meus palpites ✓</button>
   </div>
 </div>
 
-<!-- ===== LISTA DE PARTICIPANTES ===== -->
+<!-- LISTA -->
 <div id="page-lista" class="page">
   <div style="margin-bottom:20px">
     <h2 style="font-size:18px;font-weight:700;margin-bottom:4px">Participantes inscritos</h2>
-    <p style="font-size:13px;color:var(--text-muted)">Lista de quem já fez o palpite. Os detalhes dos palpites de cada um são privados.</p>
+    <p style="font-size:13px;color:var(--text-muted)">Lista de quem já fez o palpite. Os detalhes são privados.</p>
   </div>
-  <div id="lista-content"></div>
+  <div id="lista-content"><div class="empty-state">Carregando...</div></div>
 </div>
 
-<!-- ===== RANKING ===== -->
+<!-- RANKING -->
 <div id="page-ranking" class="page">
   <div class="ranking-header">
     <div>
@@ -312,10 +292,10 @@ tr:last-child td { border-bottom: none; }
     </div>
     <button class="btn-sm" onclick="renderRanking()">↺ Atualizar</button>
   </div>
-  <div id="ranking-content"></div>
+  <div id="ranking-content"><div class="empty-state">Carregando...</div></div>
 </div>
 
-<!-- ===== ADMIN ===== -->
+<!-- ADMIN -->
 <div id="page-admin" class="page">
   <div id="admin-login">
     <div class="login-wrap">
@@ -329,7 +309,6 @@ tr:last-child td { border-bottom: none; }
       </div>
     </div>
   </div>
-
   <div id="admin-painel" style="display:none">
     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:10px">
       <h2 style="font-size:18px;font-weight:700">Painel do organizador</h2>
@@ -340,21 +319,16 @@ tr:last-child td { border-bottom: none; }
       <button class="admin-tab" onclick="showATab('resultados',this)">Resultados</button>
       <button class="admin-tab" onclick="showATab('financeiro',this)">Financeiro</button>
     </div>
-
-    <!-- PAGAMENTOS -->
     <div id="atab-pagamentos" class="admin-panel active">
       <div class="admin-card">
         <h3>Confirmar pagamentos via Pix</h3>
-        <p style="font-size:13px;color:var(--text-muted);margin-bottom:16px">Confirme o pagamento somente após verificar o comprovante. Apenas participantes marcados como pagos terão palpite válido no ranking.</p>
+        <p style="font-size:13px;color:var(--text-muted);margin-bottom:16px">Confirme o pagamento somente após verificar o comprovante. Apenas participantes marcados como pagos têm palpite válido no ranking.</p>
         <div id="adm-payments"></div>
         <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap">
           <button class="btn-admin" onclick="exportCSV()">Exportar CSV</button>
-          <button class="btn-admin btn-danger" onclick="resetDados()">Resetar todos os dados</button>
         </div>
       </div>
     </div>
-
-    <!-- RESULTADOS -->
     <div id="atab-resultados" class="admin-panel">
       <div class="admin-card">
         <h3>Resultados da fase de grupos</h3>
@@ -370,8 +344,6 @@ tr:last-child td { border-bottom: none; }
         <button class="btn-admin" onclick="salvarCampeao()">Salvar campeão</button>
       </div>
     </div>
-
-    <!-- FINANCEIRO -->
     <div id="atab-financeiro" class="admin-panel">
       <div class="admin-card">
         <h3>Chave Pix</h3>
@@ -391,8 +363,24 @@ tr:last-child td { border-bottom: none; }
 
 <div class="toast" id="toast"></div>
 
-<script>
-// ── DADOS DOS GRUPOS ──────────────────────────────────────────
+<!-- FIREBASE -->
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-app.js";
+import { getFirestore, collection, doc, addDoc, getDoc, getDocs, setDoc, updateDoc, onSnapshot, query, orderBy } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-firestore.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDC4BBzelMyQH18uDv9b1qPC1MUtBo_at4",
+  authDomain: "bolao-copa-2026-a8e1d.firebaseapp.com",
+  projectId: "bolao-copa-2026-a8e1d",
+  storageBucket: "bolao-copa-2026-a8e1d.firebasestorage.app",
+  messagingSenderId: "1017365035593",
+  appId: "1:1017365035593:web:39192e0fbfa5c6058bdd98"
+};
+
+const app = initializeApp(firebaseConfig);
+const db  = getFirestore(app);
+
+// ── CONSTANTES ────────────────────────────────────────────────
 const GRUPOS = {
   A: [{f:'🇲🇽',n:'México'},        {f:'🇿🇦',n:'África do Sul'},  {f:'🇰🇷',n:'Coreia do Sul'},   {f:'🇨🇿',n:'Rep. Tcheca'}],
   B: [{f:'🇨🇦',n:'Canadá'},        {f:'🇧🇦',n:'Bósnia'},         {f:'🇶🇦',n:'Catar'},           {f:'🇨🇭',n:'Suíça'}],
@@ -408,24 +396,24 @@ const GRUPOS = {
   L: [{f:'🏴󠁧󠁢󠁥󠁮󠁧󠁿',n:'Inglaterra'},   {f:'🇭🇷',n:'Croácia'},        {f:'🇬🇭',n:'Gana'},            {f:'🇵🇦',n:'Panamá'}]
 };
 
-// ── CREDENCIAIS ADMIN ────────────────────────────────────────
 const ADMIN_USER = 'bolao2026';
 const ADMIN_PASS = 'particulas16';
 const DEADLINE   = new Date('2026-06-17T22:00:00');
 const PIX_KEY    = '058.056.995-08';
 
-// ── ESTADO LOCAL ──────────────────────────────────────────────
-let sel = {};   // groupSelections: {A:{p1,p2}, B:...}
+// ── ESTADO ────────────────────────────────────────────────────
+let sel = {};
 let champion = null;
+let allParticipants = [];
+let configData = {};
 Object.keys(GRUPOS).forEach(g => sel[g] = {p1:null, p2:null});
 
-// ── PERSISTÊNCIA ─────────────────────────────────────────────
-function db()       { try { return JSON.parse(localStorage.getItem('bolao26')||'{}'); } catch { return {}; } }
-function save(d)    { localStorage.setItem('bolao26', JSON.stringify(d)); }
+function expired() { return new Date() > DEADLINE; }
 function loggedIn() { return sessionStorage.getItem('adm')==='1'; }
-function expired()  { return new Date() > DEADLINE; }
+function esc(s) { return s.replace(/[\s.]/g,'_'); }
+function n(s) { return (s||'').toLowerCase().trim(); }
 
-// ── TOAST ──────────────────────────────────────────────────────
+// ── TOAST ─────────────────────────────────────────────────────
 function toast(msg, ok=true) {
   const t = document.getElementById('toast');
   t.textContent = msg;
@@ -434,31 +422,30 @@ function toast(msg, ok=true) {
   setTimeout(()=>t.classList.remove('show'), 3500);
 }
 
+// ── LOADING ───────────────────────────────────────────────────
+function hideLoading() { document.getElementById('loading').style.display='none'; }
+
 // ── NAVEGAÇÃO ─────────────────────────────────────────────────
-function showPage(name, el) {
+window.showPage = function(name, el) {
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
   document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
   document.getElementById('page-'+name).classList.add('active');
-  if (el) el.classList.add('active');
-  if (name==='ranking')   renderRanking();
-  if (name==='lista')     renderLista();
-  if (name==='home')      updateStats();
-  if (name==='admin')     loggedIn() ? showPainel() : showLogin();
-  if (name==='palpites') {
-    if (expired()) {
-      document.getElementById('closed-banner').style.display='block';
-      document.getElementById('palpites-form').style.display='none';
-    }
+  if(el) el.classList.add('active');
+  if(name==='ranking') renderRanking();
+  if(name==='lista')   renderLista();
+  if(name==='admin')   loggedIn() ? showPainel() : showLogin();
+  if(name==='palpites' && expired()) {
+    document.getElementById('closed-banner').style.display='block';
+    document.getElementById('palpites-form').style.display='none';
   }
-}
+};
 
-// ── CONSTRUIR UI DE GRUPOS ────────────────────────────────────
+// ── BUILD UI ──────────────────────────────────────────────────
 function buildUI() {
   const grid = document.getElementById('groups-grid');
   Object.entries(GRUPOS).forEach(([gId, teams]) => {
     const card = document.createElement('div');
-    card.className = 'group-card';
-    card.id = 'gc-'+gId;
+    card.className = 'group-card'; card.id = 'gc-'+gId;
     card.innerHTML = `<div class="group-label">Grupo ${gId}</div>
       <div class="group-status" id="gs-${gId}">Selecione 1° e 2° colocados</div>
       <div class="teams-list" id="tl-${gId}"></div>`;
@@ -467,166 +454,164 @@ function buildUI() {
     teams.forEach(team => {
       const k = esc(team.n);
       const btn = document.createElement('button');
-      btn.className = 'team-btn';
-      btn.id = `tb-${gId}-${k}`;
-      btn.innerHTML = `<span class="flag">${team.f}</span><span>${team.n}</span><span class="badge-pos" id="bp-${gId}-${k}"></span>`;
-      btn.onclick = () => clickTeam(gId, team.n);
+      btn.className='team-btn'; btn.id=`tb-${gId}-${k}`;
+      btn.innerHTML=`<span class="flag">${team.f}</span><span>${team.n}</span><span class="badge-pos" id="bp-${gId}-${k}"></span>`;
+      btn.onclick=()=>clickTeam(gId,team.n);
       list.appendChild(btn);
     });
   });
-
-  // Campeão
   const ct = document.getElementById('champion-teams');
   Object.values(GRUPOS).flat().forEach(team => {
-    const k = esc(team.n);
-    const btn = document.createElement('button');
-    btn.className = 'champ-btn';
-    btn.id = `cb-${k}`;
-    btn.innerHTML = `<span style="font-size:18px">${team.f}</span><span>${team.n}</span>`;
-    btn.onclick = () => clickChamp(team.n);
+    const k=esc(team.n);
+    const btn=document.createElement('button');
+    btn.className='champ-btn'; btn.id=`cb-${k}`;
+    btn.innerHTML=`<span style="font-size:18px">${team.f}</span><span>${team.n}</span>`;
+    btn.onclick=()=>clickChamp(team.n);
     ct.appendChild(btn);
   });
-
-  // Admin resultados select
   buildAdminResults();
 }
 
-function esc(s) { return s.replace(/[\s.]/g,'_'); }
-
 function clickTeam(gId, name) {
-  const s = sel[gId];
-  if (s.p1===name)      { s.p1=null; }
-  else if (s.p2===name) { s.p2=null; }
-  else if (!s.p1)       { s.p1=name; }
-  else if (!s.p2)       { s.p2=name; }
-  else                  { s.p1=name; }
+  const s=sel[gId];
+  if(s.p1===name) s.p1=null;
+  else if(s.p2===name) s.p2=null;
+  else if(!s.p1) s.p1=name;
+  else if(!s.p2) s.p2=name;
+  else s.p1=name;
   refreshGroup(gId);
 }
 
 function refreshGroup(gId) {
-  const s = sel[gId];
+  const s=sel[gId];
   GRUPOS[gId].forEach(team => {
-    const k = esc(team.n);
-    const btn = document.getElementById(`tb-${gId}-${k}`);
-    const bp  = document.getElementById(`bp-${gId}-${k}`);
-    btn.classList.remove('sel-1','sel-2');
-    bp.textContent=''; bp.className='badge-pos';
-    if (s.p1===team.n) { btn.classList.add('sel-1'); bp.textContent='1°'; bp.classList.add('badge-1'); }
-    if (s.p2===team.n) { btn.classList.add('sel-2'); bp.textContent='2°'; bp.classList.add('badge-2'); }
+    const k=esc(team.n);
+    const btn=document.getElementById(`tb-${gId}-${k}`);
+    const bp=document.getElementById(`bp-${gId}-${k}`);
+    btn.classList.remove('sel-1','sel-2'); bp.textContent=''; bp.className='badge-pos';
+    if(s.p1===team.n){btn.classList.add('sel-1');bp.textContent='1°';bp.classList.add('badge-1');}
+    if(s.p2===team.n){btn.classList.add('sel-2');bp.textContent='2°';bp.classList.add('badge-2');}
   });
-  const gs = document.getElementById('gs-'+gId);
-  const gc = document.getElementById('gc-'+gId);
-  if (s.p1&&s.p2) {
-    gs.textContent=`✓ ${s.p1} · ${s.p2}`; gs.className='group-status done';
-    gc.classList.remove('error');
-  } else {
-    gs.textContent='Selecione 1° e 2° colocados'; gs.className='group-status';
-  }
+  const gs=document.getElementById('gs-'+gId);
+  const gc=document.getElementById('gc-'+gId);
+  if(s.p1&&s.p2){gs.textContent=`✓ ${s.p1} · ${s.p2}`;gs.className='group-status done';gc.classList.remove('error');}
+  else{gs.textContent='Selecione 1° e 2° colocados';gs.className='group-status';}
 }
 
 function clickChamp(name) {
-  champion = (champion===name) ? null : name;
+  champion=(champion===name)?null:name;
   document.querySelectorAll('.champ-btn').forEach(b=>b.classList.remove('selected'));
-  const cs = document.getElementById('champ-selected');
-  if (champion) {
-    const k = esc(champion);
-    document.getElementById('cb-'+k).classList.add('selected');
-    cs.textContent='🏆 Sua escolha: '+champion;
-    cs.style.color='var(--gold-light)';
+  const cs=document.getElementById('champ-selected');
+  if(champion){
+    document.getElementById('cb-'+esc(champion)).classList.add('selected');
+    cs.textContent='🏆 Sua escolha: '+champion; cs.style.color='var(--gold-light)';
     document.getElementById('champ-card').classList.remove('error');
-  } else {
-    cs.textContent='Nenhuma seleção escolhida';
-    cs.style.color='var(--text-muted)';
-  }
+  } else { cs.textContent='Nenhuma seleção escolhida'; cs.style.color='var(--text-muted)'; }
 }
 
-// ── SUBMIT PALPITE ────────────────────────────────────────────
-function submitPalpite() {
-  if (expired()) { toast('⛔ Prazo encerrado em 17/06/2026', false); return; }
-
-  const nome = document.getElementById('f-nome').value.trim();
-  const wpp  = document.getElementById('f-wpp').value.trim();
-  let ok = true;
-
-  if (!nome||!wpp) { toast('⚠️ Preencha nome e WhatsApp', false); ok=false; }
-
-  // validar grupos
-  const missing = [];
-  Object.keys(GRUPOS).forEach(g => {
-    const gc = document.getElementById('gc-'+g);
-    const gs = document.getElementById('gs-'+g);
-    if (!sel[g].p1||!sel[g].p2) {
-      gc.classList.add('error');
-      gs.textContent='⚠️ Obrigatório'; gs.className='group-status err';
-      missing.push(g);
-    }
+// ── SUBMIT ────────────────────────────────────────────────────
+window.submitPalpite = async function() {
+  if(expired()){toast('⛔ Prazo encerrado',false);return;}
+  const nome=document.getElementById('f-nome').value.trim();
+  const wpp=document.getElementById('f-wpp').value.trim();
+  let ok=true;
+  if(!nome||!wpp){toast('⚠️ Preencha nome e WhatsApp',false);ok=false;}
+  const missing=[];
+  Object.keys(GRUPOS).forEach(g=>{
+    const gc=document.getElementById('gc-'+g);
+    const gs=document.getElementById('gs-'+g);
+    if(!sel[g].p1||!sel[g].p2){gc.classList.add('error');gs.textContent='⚠️ Obrigatório';gs.className='group-status err';missing.push(g);}
   });
-  if (missing.length) { toast(`⚠️ Preencha todos os grupos (faltam: ${missing.join(', ')})`, false); ok=false; }
+  if(missing.length){toast(`⚠️ Preencha todos os grupos (faltam: ${missing.join(', ')})`,false);ok=false;}
+  if(!champion){document.getElementById('champ-card').classList.add('error');toast('⚠️ Selecione o campeão',false);ok=false;}
+  if(!ok)return;
 
-  if (!champion) {
-    document.getElementById('champ-card').classList.add('error');
-    toast('⚠️ Selecione o campeão', false); ok=false;
-  }
-  if (!ok) return;
+  // Verificar nome duplicado
+  const nomeNorm=n(nome);
+  const existe=allParticipants.find(p=>n(p.nome)===nomeNorm);
+  if(existe){toast(`⚠️ Já existe palpite com o nome "${nome}". Use outra identificação, ex: ${nome} II`,false);return;}
 
-  const d = db();
-  if (!d.participantes) d.participantes = [];
+  const btn=document.getElementById('btn-submit');
+  btn.disabled=true; btn.textContent='Salvando...';
 
-  // Verificar se já existe palpite com esse nome — nome é o identificador único
-  const nomeNorm = nome.trim().toLowerCase();
-  const existe = d.participantes.find(p => p.nome.trim().toLowerCase() === nomeNorm);
-  if (existe) {
-    toast(`⚠️ Já existe um palpite com o nome "${nome}". Para um 2º palpite use outra identificação, ex: ${nome} II`, false);
-    return;
-  }
+  const palpites={grupos:{},campeao:champion};
+  Object.keys(GRUPOS).forEach(g=>palpites.grupos[g]={p1:sel[g].p1,p2:sel[g].p2});
 
-  const palpites = { grupos:{}, campeao: champion };
-  Object.keys(GRUPOS).forEach(g => palpites.grupos[g] = { p1: sel[g].p1, p2: sel[g].p2 });
-
-  d.participantes.push({ nome, wpp, palpites, pontos:0, pago:false, ts: Date.now() });
-  if (d.resultados) calcPontos(d);
-  save(d);
-  toast('✅ Palpite salvo! Envie o Pix de R$10 para '+PIX_KEY);
-  updateStats();
-
-  // Limpar form
-  document.getElementById('f-nome').value='';
-  document.getElementById('f-wpp').value='';
-  Object.keys(GRUPOS).forEach(g => { sel[g]={p1:null,p2:null}; refreshGroup(g); });
-  champion=null; clickChamp(null);
-}
+  try {
+    await addDoc(collection(db,'participantes'),{nome,wpp,palpites,pontos:0,bonus:0,pago:false,ts:Date.now()});
+    toast('✅ Palpite salvo! Envie o Pix de R$10 para '+PIX_KEY);
+    // Limpar form
+    document.getElementById('f-nome').value='';
+    document.getElementById('f-wpp').value='';
+    Object.keys(GRUPOS).forEach(g=>{sel[g]={p1:null,p2:null};refreshGroup(g);});
+    champion=null; clickChamp(null);
+  } catch(e) { toast('❌ Erro ao salvar. Tente novamente.',false); }
+  btn.disabled=false; btn.textContent='Salvar meus palpites ✓';
+};
 
 // ── CALCULAR PONTOS ───────────────────────────────────────────
-function n(s){ return (s||'').toLowerCase().trim(); }
+async function recalcularTodos() {
+  const snap = await getDocs(collection(db,'participantes'));
+  const cfgSnap = await getDoc(doc(db,'config','dados'));
+  const cfg = cfgSnap.exists() ? cfgSnap.data() : {};
+  const res = cfg.resultados||{};
+  const cr  = n(cfg.campeaoReal||'');
 
-function calcPontos(d) {
-  const res = d.resultados||{};
-  const cr  = n(d.campeaoReal);
-  (d.participantes||[]).forEach(p => {
-    let pts = 0, bonus = 0;
-    Object.keys(GRUPOS).forEach(g => {
-      if (!res[g]) return;
-      const r1=n(res[g].p1), r2=n(res[g].p2);
-      if (!r1) return;
+  const updates = [];
+  snap.forEach(docSnap => {
+    const p = docSnap.data();
+    let pts=0, bonus=0;
+    Object.keys(GRUPOS).forEach(g=>{
+      if(!res[g])return;
+      const r1=n(res[g].p1),r2=n(res[g].p2);
+      if(!r1)return;
       const pp=p.palpites.grupos[g]||{};
       const h1=n(pp.p1)===r1, h2=r2&&n(pp.p2)===r2;
-      if(h1) pts+=10; if(h2) pts+=7;
-      if(h1&&h2) { pts+=5; bonus++; }
+      if(h1)pts+=10; if(h2)pts+=7; if(h1&&h2){pts+=5;bonus++;}
     });
-    if(cr && n(p.palpites.campeao)===cr) pts+=50;
-    p.pontos=pts;
-    p.bonus=bonus;
+    if(cr&&n(p.palpites.campeao)===cr)pts+=50;
+    updates.push(updateDoc(doc(db,'participantes',docSnap.id),{pontos:pts,bonus}));
+  });
+  await Promise.all(updates);
+}
+
+// ── LISTENER TEMPO REAL ───────────────────────────────────────
+function initListeners() {
+  const q = query(collection(db,'participantes'), orderBy('ts','asc'));
+  onSnapshot(q, snap => {
+    allParticipants = snap.docs.map(d=>({id:d.id,...d.data()}));
+    updateStats();
+    if(document.getElementById('page-lista').classList.contains('active')) renderLista();
+    if(document.getElementById('page-ranking').classList.contains('active')) renderRanking();
+    if(document.getElementById('atab-pagamentos').classList.contains('active') && loggedIn()) renderAdmPayments();
+    if(document.getElementById('atab-financeiro').classList.contains('active') && loggedIn()) renderFinanceiro();
+  });
+
+  onSnapshot(doc(db,'config','dados'), snap => {
+    configData = snap.exists() ? snap.data() : {};
+    updateStats();
+    if(document.getElementById('page-ranking').classList.contains('active')) renderRanking();
   });
 }
 
-// ── LISTA PÚBLICA ─────────────────────────────────────────────
+// ── STATS ─────────────────────────────────────────────────────
+function updateStats() {
+  const validos = allParticipants.filter(p=>p.pago).length;
+  const total   = validos*10;
+  document.getElementById('s-inscritos').textContent = allParticipants.length;
+  document.getElementById('s-validos').textContent   = validos;
+  document.getElementById('s-premio').textContent    = 'R$ '+total;
+  document.getElementById('pv1').textContent = `R$ ${Math.floor(total*.7)} para o 1º`;
+  document.getElementById('pv2').textContent = `R$ ${total-Math.floor(total*.7)} para o 2º`;
+}
+
+// ── LISTA ─────────────────────────────────────────────────────
 function renderLista() {
-  const parts = (db().participantes||[]).slice().sort((a,b)=>a.ts-b.ts);
   const cont = document.getElementById('lista-content');
-  if (!parts.length) { cont.innerHTML='<div class="empty-state">Nenhum participante inscrito ainda.</div>'; return; }
-  const validos = parts.filter(p=>p.pago).length;
-  cont.innerHTML = `<p style="font-size:13px;color:var(--text-muted);margin-bottom:16px">${parts.length} inscrito(s) · ${validos} com pagamento confirmado · Os palpites de cada participante são privados</p>
-    <div class="participants-list">${parts.map((p,i)=>`<div class="participant-item">
+  if(!allParticipants.length){cont.innerHTML='<div class="empty-state">Nenhum participante inscrito ainda.</div>';return;}
+  const validos=allParticipants.filter(p=>p.pago).length;
+  cont.innerHTML=`<p style="font-size:13px;color:var(--text-muted);margin-bottom:16px">${allParticipants.length} inscrito(s) · ${validos} com pagamento confirmado · Palpites são privados</p>
+    <div class="participants-list">${allParticipants.map((p,i)=>`<div class="participant-item">
       <div style="display:flex;align-items:center;gap:12px">
         <div style="min-width:32px;height:32px;border-radius:50%;background:var(--bg-card);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:var(--gold-light);flex-shrink:0">${i+1}</div>
         <div><div class="p-name">${p.nome}</div><div class="p-time">${new Date(p.ts).toLocaleDateString('pt-BR',{day:'2-digit',month:'2-digit',year:'2-digit',hour:'2-digit',minute:'2-digit'})}</div></div>
@@ -637,230 +622,184 @@ function renderLista() {
 
 // ── RANKING ───────────────────────────────────────────────────
 function renderRanking() {
-  const d = db();
-  const cr = n(d.campeaoReal);
-  const parts = (d.participantes||[]).filter(p=>p.pago).slice().sort((a,b)=>{
-    if (b.pontos !== a.pontos) return b.pontos - a.pontos;
-    // desempate 1: maior número de bônus (grupos completos cravados)
-    const aB = a.bonus||0, bB = b.bonus||0;
-    if (bB !== aB) return bB - aB;
-    // desempate 2: acertou o campeão
-    const aChamp = cr && n(a.palpites.campeao)===cr ? 1 : 0;
-    const bChamp = cr && n(b.palpites.campeao)===cr ? 1 : 0;
-    if (bChamp !== aChamp) return bChamp - aChamp;
-    // desempate 3: inscrição mais antiga
-    return a.ts - b.ts;
+  const cr = n(configData.campeaoReal||'');
+  const parts = allParticipants.filter(p=>p.pago).slice().sort((a,b)=>{
+    if(b.pontos!==a.pontos)return b.pontos-a.pontos;
+    const aB=a.bonus||0,bB=b.bonus||0;
+    if(bB!==aB)return bB-aB;
+    const aC=cr&&n(a.palpites.campeao)===cr?1:0;
+    const bC=cr&&n(b.palpites.campeao)===cr?1:0;
+    if(bC!==aC)return bC-aC;
+    return a.ts-b.ts;
   });
-  const cont = document.getElementById('ranking-content');
-  if (!parts.length) { cont.innerHTML='<div class="empty-state">Ainda não há participantes com pagamento confirmado.<br>O ranking aparece aqui assim que o organizador validar os Pix.</div>'; return; }
+  const cont=document.getElementById('ranking-content');
+  if(!parts.length){cont.innerHTML='<div class="empty-state">Ainda não há participantes com pagamento confirmado.<br>O ranking aparece aqui assim que o organizador validar os Pix.</div>';return;}
   const m=['🥇','🥈','🥉'];
-  const champAcertado = cr ? parts.filter(p=>n(p.palpites.campeao)===cr).length : 0;
+  const champAcertado=cr?parts.filter(p=>n(p.palpites.campeao)===cr).length:0;
   cont.innerHTML=`
-    ${cr ? `<div style="background:rgba(200,153,42,.1);border:1px solid rgba(200,153,42,.3);border-radius:10px;padding:10px 16px;font-size:13px;color:var(--gold-light);margin-bottom:16px">🏆 Campeão: <strong>${d.campeaoReal}</strong> · ${champAcertado} participante(s) acertaram</div>` : ''}
-    <p style="font-size:11px;color:var(--text-muted);margin-bottom:12px;letter-spacing:.03em">Desempate: 1° mais bônus de grupo · 2° acertou o campeão · 3° inscrição mais antiga</p>
-    <table><thead><tr><th>#</th><th>Nome</th><th>Campeão</th><th style="text-align:center">🏆</th><th style="text-align:center">⭐ Bônus</th><th style="text-align:right">Pontos</th></tr></thead>
+    ${cr?`<div style="background:rgba(200,153,42,.1);border:1px solid rgba(200,153,42,.3);border-radius:10px;padding:10px 16px;font-size:13px;color:var(--gold-light);margin-bottom:16px">🏆 Campeão: <strong>${configData.campeaoReal}</strong> · ${champAcertado} participante(s) acertaram</div>`:''}
+    <p style="font-size:11px;color:var(--text-muted);margin-bottom:12px">Desempate: 1° mais bônus · 2° acertou campeão · 3° inscrição mais antiga</p>
+    <table><thead><tr><th>#</th><th>Nome</th><th>Campeão</th><th style="text-align:center">🏆</th><th style="text-align:center">⭐</th><th style="text-align:right">Pts</th></tr></thead>
     <tbody>${parts.map((p,i)=>{
-      const acertou = cr && n(p.palpites.campeao)===cr;
+      const ac=cr&&n(p.palpites.campeao)===cr;
       return `<tr>
         <td style="font-weight:700;font-size:16px">${m[i]||i+1}</td>
         <td>${p.nome}</td>
         <td style="color:var(--text-muted);font-size:13px">${p.palpites.campeao||'—'}</td>
-        <td style="text-align:center">${cr ? (acertou ? '<span style="color:#5ddb8a;font-weight:700">✓</span>' : '<span style="color:var(--text-muted)">—</span>') : '<span style="color:var(--text-muted)">aguard.</span>'}</td>
+        <td style="text-align:center">${cr?(ac?'<span style="color:#5ddb8a;font-weight:700">✓</span>':'<span style="color:var(--text-muted)">—</span>'):'<span style="color:var(--text-muted)">aguard.</span>'}</td>
         <td style="text-align:center;font-weight:600;color:var(--gold-light)">${p.bonus||0}</td>
         <td class="rank-pts" style="text-align:right">${p.pontos}</td>
       </tr>`;
     }).join('')}</tbody></table>`;
 }
 
-// ── STATS HOME ────────────────────────────────────────────────
-function updateStats() {
-  const d = db();
-  const parts  = d.participantes||[];
-  const validos = parts.filter(p=>p.pago).length;
-  const total  = validos*10;
-  document.getElementById('s-inscritos').textContent = parts.length;
-  document.getElementById('s-validos').textContent   = validos;
-  document.getElementById('s-premio').textContent    = 'R$ '+total;
-  document.getElementById('pv1').textContent = `R$ ${Math.floor(total*.7)} para o 1º`;
-  document.getElementById('pv2').textContent = `R$ ${total-Math.floor(total*.7)} para o 2º`;
-}
-
 // ── ADMIN LOGIN ───────────────────────────────────────────────
-function doLogin() {
+window.doLogin = function() {
   const u=document.getElementById('l-user').value;
   const p=document.getElementById('l-pass').value;
-  if(u===ADMIN_USER&&p===ADMIN_PASS){ sessionStorage.setItem('adm','1'); showPainel(); }
+  if(u===ADMIN_USER&&p===ADMIN_PASS){sessionStorage.setItem('adm','1');showPainel();}
   else document.getElementById('l-err').style.display='block';
+};
+window.adminLogout = function(){sessionStorage.removeItem('adm');showLogin();};
+function showLogin(){document.getElementById('admin-login').style.display='block';document.getElementById('admin-painel').style.display='none';}
+function showPainel(){
+  document.getElementById('admin-login').style.display='none';
+  document.getElementById('admin-painel').style.display='block';
+  renderAdmPayments(); loadAdmResults(); renderFinanceiro();
 }
-function adminLogout(){ sessionStorage.removeItem('adm'); showLogin(); }
-function showLogin(){ document.getElementById('admin-login').style.display='block'; document.getElementById('admin-painel').style.display='none'; }
-function showPainel(){ document.getElementById('admin-login').style.display='none'; document.getElementById('admin-painel').style.display='block'; renderAdmPayments(); loadAdmResults(); renderFinanceiro(); }
-
-// ── ADMIN TABS ────────────────────────────────────────────────
-function showATab(name, el) {
+window.showATab = function(name, el) {
   document.querySelectorAll('.admin-panel').forEach(p=>p.classList.remove('active'));
   document.querySelectorAll('.admin-tab').forEach(t=>t.classList.remove('active'));
-  document.getElementById('atab-'+name).classList.add('active');
-  el.classList.add('active');
-  if(name==='financeiro') renderFinanceiro();
-  if(name==='pagamentos') renderAdmPayments();
-}
+  document.getElementById('atab-'+name).classList.add('active'); el.classList.add('active');
+  if(name==='financeiro')renderFinanceiro();
+  if(name==='pagamentos')renderAdmPayments();
+};
 
 // ── ADMIN PAYMENTS ────────────────────────────────────────────
-function fmtWpp(w) {
-  const d = w.replace(/\D/g,'');
-  if (d.length===11) return `(${d.slice(0,2)}) ${d.slice(2,7)}-${d.slice(7)}`;
-  if (d.length===10) return `(${d.slice(0,2)}) ${d.slice(2,6)}-${d.slice(6)}`;
-  return w;
-}
+function fmtWpp(w){const d=w.replace(/\D/g,'');if(d.length===11)return`(${d.slice(0,2)}) ${d.slice(2,7)}-${d.slice(7)}`;if(d.length===10)return`(${d.slice(0,2)}) ${d.slice(2,6)}-${d.slice(6)}`;return w;}
 
-function copyOne(num, nome) {
-  const n = '55'+num;
-  navigator.clipboard.writeText(n).then(()=>toast(`✅ Número de ${nome} copiado!`)).catch(()=>toast('Número: '+n));
-}
-
-function copyAllWpp() {
-  const parts = db().participantes||[];
-  const nums = parts.map(p=>'55'+p.wpp.replace(/\D/g,'')).join('\n');
-  navigator.clipboard.writeText(nums).then(()=>toast(`✅ ${parts.length} números copiados!`)).catch(()=>toast('Falha ao copiar', false));
-}
+window.copyOne = function(num,nome){const n2='55'+num;navigator.clipboard.writeText(n2).then(()=>toast(`✅ Número de ${nome} copiado!`)).catch(()=>toast('Número: '+n2));};
+window.copyAllWpp = function(){const nums=allParticipants.map(p=>'55'+p.wpp.replace(/\D/g,'')).join('\n');navigator.clipboard.writeText(nums).then(()=>toast(`✅ ${allParticipants.length} números copiados!`)).catch(()=>toast('Falha ao copiar',false));};
 
 function renderAdmPayments() {
-  const parts = db().participantes||[];
-  const cont = document.getElementById('adm-payments');
-  if(!parts.length){ cont.innerHTML='<p style="font-size:13px;color:var(--text-muted)">Nenhum participante ainda.</p>'; return; }
-  const pagos = parts.filter(p=>p.pago).length;
-  cont.innerHTML=`
-    <p style="font-size:13px;color:var(--text-muted);margin-bottom:14px">${pagos}/${parts.length} confirmados · R$ ${pagos*10},00 arrecadados</p>
-    <div style="overflow-x:auto"><table><thead><tr><th>#</th><th>Nome / Identificação</th><th>WhatsApp</th><th>Campeão</th><th>Inscrito em</th><th>Status</th><th>Ação</th></tr></thead>
-    <tbody>${parts.map((p,i)=>`<tr>
-      <td style="color:var(--text-muted);font-size:13px">${i+1}</td>
+  const cont=document.getElementById('adm-payments');
+  if(!allParticipants.length){cont.innerHTML='<p style="font-size:13px;color:var(--text-muted)">Nenhum participante ainda.</p>';return;}
+  const pagos=allParticipants.filter(p=>p.pago).length;
+  cont.innerHTML=`<p style="font-size:13px;color:var(--text-muted);margin-bottom:14px">${pagos}/${allParticipants.length} confirmados · R$ ${pagos*10},00 arrecadados</p>
+    <div style="overflow-x:auto"><table><thead><tr><th>#</th><th>Nome</th><th>WhatsApp</th><th>Campeão</th><th>Inscrito em</th><th>Status</th><th>Ação</th></tr></thead>
+    <tbody>${allParticipants.map((p,i)=>`<tr>
+      <td style="color:var(--text-muted)">${i+1}</td>
       <td style="white-space:nowrap;font-weight:500">${p.nome}</td>
-      <td>
-        <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
-          <span style="font-size:13px;font-weight:600">${fmtWpp(p.wpp)}</span>
-          <a href="https://wa.me/55${p.wpp.replace(/\D/g,'')}" target="_blank" style="background:rgba(37,211,102,0.15);border:1px solid rgba(37,211,102,0.35);color:#25d366;border-radius:6px;padding:3px 9px;font-size:11px;font-weight:600;text-decoration:none;white-space:nowrap">📲 Abrir</a>
-          <button onclick="copyOne('${p.wpp.replace(/\D/g,'')}','${p.nome}')" style="background:rgba(42,143,82,0.1);border:1px solid var(--border);color:var(--text-muted);border-radius:6px;padding:3px 9px;font-size:11px;cursor:pointer">Copiar</button>
-        </div>
-      </td>
+      <td><div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap">
+        <span style="font-size:13px;font-weight:600">${fmtWpp(p.wpp)}</span>
+        <a href="https://wa.me/55${p.wpp.replace(/\D/g,'')}" target="_blank" style="background:rgba(37,211,102,0.15);border:1px solid rgba(37,211,102,0.35);color:#25d366;border-radius:6px;padding:3px 8px;font-size:11px;font-weight:600;text-decoration:none">📲</a>
+        <button onclick="copyOne('${p.wpp.replace(/\D/g,'')}','${p.nome}')" style="background:rgba(42,143,82,0.1);border:1px solid var(--border);color:var(--text-muted);border-radius:6px;padding:3px 8px;font-size:11px;cursor:pointer">Copiar</button>
+      </div></td>
       <td style="font-size:12px;color:var(--text-muted)">${p.palpites.campeao||'—'}</td>
       <td style="font-size:12px;color:var(--text-muted);white-space:nowrap">${new Date(p.ts).toLocaleDateString('pt-BR',{day:'2-digit',month:'2-digit',year:'2-digit',hour:'2-digit',minute:'2-digit'})}</td>
       <td><span class="valido ${p.pago?'sim':'nao'}">${p.pago?'Pago':'Pendente'}</span></td>
-      <td><button class="pago-toggle ${p.pago?'sim':'nao'}" onclick="togglePago(${i})">${p.pago?'Desmarcar':'✓ Confirmar Pix'}</button></td>
+      <td><button class="pago-toggle ${p.pago?'sim':'nao'}" onclick="togglePago('${p.id}',${p.pago})">${p.pago?'Desmarcar':'✓ Confirmar Pix'}</button></td>
     </tr>`).join('')}</tbody></table></div>
-
     <div style="margin-top:20px;background:var(--bg);border:1px solid var(--border);border-radius:12px;padding:16px">
-      <p style="font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-muted);margin-bottom:12px">Todos os números — clique para copiar individualmente</p>
+      <p style="font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-muted);margin-bottom:12px">Todos os números — clique para copiar</p>
       <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px">
-        ${parts.map(p=>`<span onclick="copyOne('${p.wpp.replace(/\D/g,'')}','${p.nome}')" title="Clique para copiar" style="background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:6px 12px;font-size:12px;cursor:pointer;display:flex;align-items:center;gap:6px">
-          <span style="color:#25d366;font-size:14px">📲</span>
-          <span style="font-weight:600;color:var(--text)">${fmtWpp(p.wpp)}</span>
+        ${allParticipants.map(p=>`<span onclick="copyOne('${p.wpp.replace(/\D/g,'')}','${p.nome}')" style="background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:6px 12px;font-size:12px;cursor:pointer;display:flex;align-items:center;gap:6px">
+          <span style="color:#25d366">📲</span>
+          <span style="font-weight:600">${fmtWpp(p.wpp)}</span>
           <span style="color:var(--text-muted)">${p.nome.length>16?p.nome.slice(0,14)+'…':p.nome}</span>
         </span>`).join('')}
       </div>
-      <button class="btn-admin" onclick="copyAllWpp()">Copiar todos os números de uma vez</button>
+      <button class="btn-admin" onclick="copyAllWpp()">Copiar todos os números</button>
     </div>`;
 }
 
-function togglePago(i) {
-  const d=db();
-  if(!d.participantes||!d.participantes[i]) return;
-  d.participantes[i].pago=!d.participantes[i].pago;
-  save(d); renderAdmPayments(); updateStats();
-  toast(d.participantes[i].pago?'✅ Pix confirmado — palpite agora válido':'Pagamento desmarcado');
-}
+window.togglePago = async function(id, atual) {
+  try {
+    await updateDoc(doc(db,'participantes',id),{pago:!atual});
+    toast(!atual?'✅ Pix confirmado — palpite agora válido':'Pagamento desmarcado');
+  } catch(e){toast('Erro ao atualizar',false);}
+};
 
 // ── ADMIN RESULTADOS ──────────────────────────────────────────
 function buildAdminResults() {
-  const grid = document.getElementById('adm-results');
-  if(grid&&grid.childElementCount>0) return;
-  if(grid) {
-    Object.entries(GRUPOS).forEach(([gId, teams]) => {
-      const d = document.createElement('div');
-      d.className='result-row';
-      const opts = teams.map(t=>`<option value="${t.n}">${t.f} ${t.n}</option>`).join('');
-      d.innerHTML=`<div class="rlabel">Grupo ${gId}</div>
-        <label>1º colocado</label>
-        <select id="r${gId}_1"><option value="">Selecione...</option>${opts}</select>
-        <label>2º colocado</label>
-        <select id="r${gId}_2"><option value="">Selecione...</option>${opts}</select>`;
-      grid.appendChild(d);
-    });
-  }
-  // Campeão select admin
-  const sc = document.getElementById('sel-campeao');
-  if(sc&&sc.options.length===1) {
-    Object.values(GRUPOS).flat().forEach(t => {
-      const o=document.createElement('option'); o.value=t.n; o.textContent=t.f+' '+t.n; sc.appendChild(o);
-    });
-  }
-}
-
-function loadAdmResults() {
-  buildAdminResults();
-  const d=db(); const res=d.resultados||{};
-  Object.keys(GRUPOS).forEach(g=>{
-    const r=res[g]||{};
-    const s1=document.getElementById(`r${g}_1`);
-    const s2=document.getElementById(`r${g}_2`);
-    if(s1&&r.p1) s1.value=r.p1;
-    if(s2&&r.p2) s2.value=r.p2;
+  const grid=document.getElementById('adm-results');
+  if(!grid||grid.childElementCount>0)return;
+  Object.entries(GRUPOS).forEach(([gId,teams])=>{
+    const d=document.createElement('div'); d.className='result-row';
+    const opts=teams.map(t=>`<option value="${t.n}">${t.f} ${t.n}</option>`).join('');
+    d.innerHTML=`<div class="rlabel">Grupo ${gId}</div>
+      <label>1º colocado</label><select id="r${gId}_1"><option value="">Selecione...</option>${opts}</select>
+      <label>2º colocado</label><select id="r${gId}_2"><option value="">Selecione...</option>${opts}</select>`;
+    grid.appendChild(d);
   });
   const sc=document.getElementById('sel-campeao');
-  if(sc&&d.campeaoReal) sc.value=d.campeaoReal;
+  if(sc&&sc.options.length===1){
+    Object.values(GRUPOS).flat().forEach(t=>{const o=document.createElement('option');o.value=t.n;o.textContent=t.f+' '+t.n;sc.appendChild(o);});
+  }
 }
 
-function salvarResultados() {
-  const d=db(); if(!d.resultados) d.resultados={};
+async function loadAdmResults() {
+  const snap=await getDoc(doc(db,'config','dados'));
+  if(!snap.exists())return;
+  const cfg=snap.data(); const res=cfg.resultados||{};
   Object.keys(GRUPOS).forEach(g=>{
-    d.resultados[g]={ p1:document.getElementById(`r${g}_1`).value, p2:document.getElementById(`r${g}_2`).value };
+    const r=res[g]||{};
+    const s1=document.getElementById(`r${g}_1`); const s2=document.getElementById(`r${g}_2`);
+    if(s1&&r.p1)s1.value=r.p1; if(s2&&r.p2)s2.value=r.p2;
   });
-  calcPontos(d); save(d);
-  toast('✅ Resultados salvos e pontuações recalculadas!');
-  renderAdmPayments();
+  const sc=document.getElementById('sel-campeao');
+  if(sc&&cfg.campeaoReal)sc.value=cfg.campeaoReal;
 }
 
-function salvarCampeao() {
-  const d=db(); d.campeaoReal=document.getElementById('sel-campeao').value;
-  calcPontos(d); save(d); toast('✅ Campeão salvo e pontos atualizados!');
-}
+window.salvarResultados = async function() {
+  const resultados={};
+  Object.keys(GRUPOS).forEach(g=>{resultados[g]={p1:document.getElementById(`r${g}_1`).value,p2:document.getElementById(`r${g}_2`).value};});
+  const snap=await getDoc(doc(db,'config','dados'));
+  const atual=snap.exists()?snap.data():{};
+  await setDoc(doc(db,'config','dados'),{...atual,resultados});
+  await recalcularTodos();
+  toast('✅ Resultados salvos e pontuações recalculadas!');
+};
+
+window.salvarCampeao = async function() {
+  const campeaoReal=document.getElementById('sel-campeao').value;
+  const snap=await getDoc(doc(db,'config','dados'));
+  const atual=snap.exists()?snap.data():{};
+  await setDoc(doc(db,'config','dados'),{...atual,campeaoReal});
+  await recalcularTodos();
+  toast('✅ Campeão salvo e pontos atualizados!');
+};
 
 // ── FINANCEIRO ────────────────────────────────────────────────
 function renderFinanceiro() {
-  const d=db(); const parts=d.participantes||[];
-  const pagos=parts.filter(p=>p.pago).length, total=pagos*10;
+  const pagos=allParticipants.filter(p=>p.pago).length, total=pagos*10;
   const p1=Math.floor(total*.7), p2=total-p1;
   document.getElementById('fin-stats').innerHTML=`
-    <div class="stat-card"><div class="stat-num">${parts.length}</div><div class="stat-label">Inscritos</div></div>
-    <div class="stat-card"><div class="stat-num">${pagos}</div><div class="stat-label">Pagamentos confirmados</div></div>
+    <div class="stat-card"><div class="stat-num">${allParticipants.length}</div><div class="stat-label">Inscritos</div></div>
+    <div class="stat-card"><div class="stat-num">${pagos}</div><div class="stat-label">Confirmados</div></div>
     <div class="stat-card"><div class="stat-num">R$ ${total}</div><div class="stat-label">Total arrecadado</div></div>`;
   document.getElementById('fin-prizes').innerHTML=`
     <div class="prize-card"><div class="pz-pos">🥇</div><div class="pz-pct">R$ ${p1}</div><div class="pz-val">70% — 1º lugar</div></div>
     <div class="prize-card"><div class="pz-pos">🥈</div><div class="pz-pct">R$ ${p2}</div><div class="pz-val">30% — 2º lugar</div></div>`;
 }
 
-// ── EXPORTAR CSV ──────────────────────────────────────────────
-function exportCSV() {
-  const d=db(); const parts=d.participantes||[];
-  if(!parts.length){ toast('Sem dados para exportar', false); return; }
+// ── CSV ───────────────────────────────────────────────────────
+window.exportCSV = function() {
+  if(!allParticipants.length){toast('Sem dados',false);return;}
   const gIds=Object.keys(GRUPOS);
   const hdr=['#','Nome','WhatsApp','Link WhatsApp','Pago','Pontos','Campeão',...gIds.flatMap(g=>[`Grupo ${g} 1°`,`Grupo ${g} 2°`])];
-  const rows=parts.map((p,i)=>[i+1,p.nome,fmtWpp(p.wpp),'https://wa.me/55'+p.wpp.replace(/\D/g,''),p.pago?'Sim':'Não',p.pontos,p.palpites.campeao||'',...gIds.flatMap(g=>[p.palpites.grupos[g]?.p1||'',p.palpites.grupos[g]?.p2||''])]);
+  const rows=allParticipants.map((p,i)=>[i+1,p.nome,fmtWpp(p.wpp),'https://wa.me/55'+p.wpp.replace(/\D/g,''),p.pago?'Sim':'Não',p.pontos,p.palpites.campeao||'',...gIds.flatMap(g=>[p.palpites.grupos[g]?.p1||'',p.palpites.grupos[g]?.p2||''])]);
   const csv=[hdr,...rows].map(r=>r.map(c=>`"${String(c).replace(/"/g,'""')}"`).join(',')).join('\n');
-  const a=document.createElement('a'); a.href='data:text/csv;charset=utf-8,\uFEFF'+encodeURIComponent(csv); a.download='bolao-copa-2026.csv'; a.click();
+  const a=document.createElement('a');a.href='data:text/csv;charset=utf-8,\uFEFF'+encodeURIComponent(csv);a.download='bolao-copa-2026.csv';a.click();
   toast('✅ CSV exportado!');
-}
+};
 
-function copyPix() { navigator.clipboard.writeText(PIX_KEY).then(()=>toast('✅ Chave Pix copiada!')).catch(()=>toast('Chave: '+PIX_KEY)); }
-
-function resetDados() {
-  if(!confirm('Tem certeza? Isso apaga TODOS os dados do bolão!')) return;
-  localStorage.removeItem('bolao26'); updateStats(); renderAdmPayments(); toast('Dados resetados.');
-}
+window.copyPix = function(){navigator.clipboard.writeText(PIX_KEY).then(()=>toast('✅ Chave Pix copiada!')).catch(()=>toast('Chave: '+PIX_KEY));};
 
 // ── INIT ──────────────────────────────────────────────────────
 buildUI();
-updateStats();
+initListeners();
+setTimeout(hideLoading, 1500);
 </script>
 </body>
 </html>
