@@ -699,14 +699,36 @@ function renderFinanceiro(){
 }
 
 // ── CSV ───────────────────────────────────────────────────────
-function exportCSV(){
-  if(!allParts.length){toast('Sem dados',false);return;}
+async function exportCSV(){
   const gIds=Object.keys(GRUPOS);
+  // Busca dados completos com palpites via rota admin
+  let parts;
+  try {
+    parts = await api('GET','/admin/participantes',null,true);
+    if(!Array.isArray(parts)||!parts.length){toast('Sem dados',false);return;}
+  } catch(e){toast('Erro ao buscar dados',false);return;}
+
   const hdr=['#','Nome','WhatsApp','Link WhatsApp','Pago','Pontos','Bônus','Campeão',...gIds.flatMap(g=>[`Grupo ${g} 1°`,`Grupo ${g} 2°`])];
-  const rows=allParts.map((p,i)=>[i+1,p.nome,fmtWpp(p.wpp||''),'https://wa.me/55'+(p.wpp||'').replace(/\D/g,''),p.pago?'Sim':'Não',p.pontos||0,p.bonus||0,p.campeao||'',...gIds.flatMap(g=>[p.grupos?.[g]?.p1||'',p.grupos?.[g]?.p2||''])]);
+  const rows=parts.map((p,i)=>[
+    i+1,
+    p.nome,
+    fmtWpp(p.wpp||''),
+    'https://wa.me/55'+(p.wpp||'').replace(/\D/g,''),
+    p.pago?'Sim':'Não',
+    p.pontos||0,
+    p.bonus||0,
+    p.palpites?.campeao||'',
+    ...gIds.flatMap(g=>[
+      p.palpites?.grupos?.[g]?.p1||'',
+      p.palpites?.grupos?.[g]?.p2||''
+    ])
+  ]);
   const csv=[hdr,...rows].map(r=>r.map(c=>`"${String(c).replace(/"/g,'""')}"`).join(',')).join('\n');
-  const a=document.createElement('a');a.href='data:text/csv;charset=utf-8,\uFEFF'+encodeURIComponent(csv);a.download='bolao-copa-2026.csv';a.click();
-  toast('✅ CSV exportado!');
+  const a=document.createElement('a');
+  a.href='data:text/csv;charset=utf-8,\uFEFF'+encodeURIComponent(csv);
+  a.download='bolao-copa-2026.csv';
+  a.click();
+  toast('✅ CSV exportado com todos os palpites!');
 }
 
 // ── INIT ──────────────────────────────────────────────────────
